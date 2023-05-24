@@ -1,0 +1,236 @@
+body {
+    margin: 0px;
+    background-color: rgb(101, 91, 91);
+}
+
+html {
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+/*NAVBAR:*/
+.navb-container {
+    position: sticky;
+    z-index: 6;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: #1d3c21;
+}
+
+.logo-navb {
+    justify-self: start;
+    margin-left: 20px;
+    color: #ce7878;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.ver-carrito {
+    font-size: 31px;
+    margin-right: 20px;
+    margin-top: 3.7vh;
+    cursor: pointer; 
+}
+
+/*MAIN*/
+.main {
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://biopeople.eu/wp-content/uploads/2022/08/1_vxjAHkrXbGG6gOiPZgjeZA.jpeg");
+}
+
+.main-container {
+    text-align: center;
+    padding: 20% 0;
+}
+.main h1 {
+    margin: 0;
+    color: rgb(198, 171, 171);
+    text-shadow: 2px 20px 100px rgba(0, 0, 0, 1);
+    font-size: 76px;
+    font-weight: bold;
+}
+
+.main p {
+    font-size: 50px;
+    color: rgb(238, 121, 121);
+    opacity: 0.9;
+    text-shadow: 2px 20px 100px rgba(0, 0, 0, 1);
+}
+
+/* TARJETAS DE PRODUCTOS */
+.technology-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 80px 0 80px;
+    padding: 70px 0 70px 0;
+}
+
+.cards {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(234, 200, 138);
+    padding-top: 19px; 
+}
+
+.cards img {
+    width: 90%;
+    height: 250px;
+    border: 5.4px rgb(74, 77, 74) solid;
+    border-radius: 7px;
+}
+
+.cards h3 {
+    font-size: 12px;
+}
+
+.prices {
+    color: rgb(149, 73, 73);
+    font-size: 19px;
+}
+
+.cards button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color:#1d3c21;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.cards button:hover {
+    background-color: rgb(90, 128, 90);
+    color: wheat;
+}
+
+/* CONTENEDOR MODAL */
+.contenedor-modal {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: black;
+    background-color:rgb(182, 212, 182);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.contenedor-modal::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #cccc8c;
+    color: #252424;
+    width: 100%;
+}
+
+.modal-header-title {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.contenedor-modal .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-content h3 {
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.modal-content p {
+    font-size: 12px;
+}
+
+.contenedor-modal div img {
+    height: 120px;
+    width: 120px;
+    margin-right: 17px;
+    border: 3px solid rgb(182, 230, 142);
+    border-radius: 6px;
+}
+
+.total-final-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* ELIMINAR PRODUCTO DEL CARRITO */
+.eliminar-producto {
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/* CANTIDAD DE LOS PRODUCTOS DEL CARRITO DE COMPRAS */
+.cantidad_producto {
+    font-size: 17px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+/* BOTON PARA AUMENTAR Y INCREMENTAR LA CANTIDAD DE CADA PRODUCTO AGREGADO AL CARRITO */
+.cant-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    position: absolute;
+    top: 38px;
+    right: 17px;
+    display: none;
+}
+
+.sumar {
+    cursor: pointer;
+    margin-right: 12px;
+    background-color: rgb(235, 188, 135);
+    font-size: 21px;
+}
+
+.restar {
+    cursor: pointer;
+    margin-left: 16px;
+    background-color: rgb(235, 188, 135);
+    font-size: 21px;
+    padding: 0 5px 0 5px;
+}
+
+.restar:hover {
+    background-color:rgb(149, 73, 73);
+}
+
+.sumar:hover {
+    background-color:rgb(149, 73, 73);
+}
